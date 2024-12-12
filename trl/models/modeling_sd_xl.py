@@ -29,6 +29,9 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
+from transformers.utils import is_peft_available
+
+
 from .sd_utils import convert_state_dict_to_diffusers
 
 if is_peft_available():
